@@ -1,0 +1,45 @@
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0\Reconocimiento facial\obj\Debug\Reconocimiento facial.exe
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0\Reconocimiento facial\obj\Debug\Reconocimiento facial.pdb
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0\Reconocimiento facial\bin\Debug\Reconocimiento facial.exe
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0\Reconocimiento facial\bin\Debug\Reconocimiento facial.pdb
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csprojResolveAssemblyReference.cache
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Registrar.resources
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Properties.Resources.resources
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Reconocimiento.resources
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csproj.GenerateResource.Cache
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3)\Reconocimiento facial\obj\Debug\Reconocimiento facial.exe
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3)\Reconocimiento facial\obj\Debug\Reconocimiento facial.pdb
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3)\Reconocimiento facial\bin\Debug\Reconocimiento facial.exe
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3)\Reconocimiento facial\bin\Debug\Reconocimiento facial.pdb
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3)\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csprojResolveAssemblyReference.cache
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3)\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Registrar.resources
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3)\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Properties.Resources.resources
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3)\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Reconocimiento.resources
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3)\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csproj.GenerateResource.Cache
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3) - copia - copia\Reconocimiento facial\obj\Debug\Reconocimiento facial.exe
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3) - copia - copia\Reconocimiento facial\obj\Debug\Reconocimiento facial.pdb
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3) - copia - copia\Reconocimiento facial\bin\Debug\Reconocimiento facial.exe
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3) - copia - copia\Reconocimiento facial\bin\Debug\Reconocimiento facial.pdb
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3) - copia - copia\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csprojResolveAssemblyReference.cache
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3) - copia - copia\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Registrar.resources
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3) - copia - copia\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Properties.Resources.resources
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3) - copia - copia\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Reconocimiento.resources
+C:\Users\Abund\Downloads\Reconocimiento facial v2.0 - copia (3) - copia - copia\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csproj.GenerateResource.Cache
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csprojAssemblyReference.cache
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Comparar.resources
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Registrar.resources
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Properties.Resources.resources
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Reconocimiento.resources
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csproj.GenerateResource.cache
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csproj.CoreCompileInputs.cache
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento facial.exe
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento facial.pdb
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\bin\Debug\Reconocimiento facial.exe
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\bin\Debug\Reconocimiento facial.pdb
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csproj.CopyComplete
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Registrar_Datos.resources
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\bin\Debug\Reconocimiento facial.exe.config
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\bin\Debug\MySql.Data.dll
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\bin\Debug\Google.Protobuf.dll
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\bin\Debug\MySql.Data.xml
+C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.ResultadoComparar.resources
