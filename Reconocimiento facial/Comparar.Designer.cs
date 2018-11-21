@@ -116,11 +116,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Blue;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(12, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(453, 19);
+            this.label1.Size = new System.Drawing.Size(463, 20);
             this.label1.TabIndex = 57;
             this.label1.Text = "Sistema de Reconocimiento - Comparación de Imágenes";
             // 
@@ -144,7 +144,7 @@
             this.lblKey.AutoSize = true;
             this.lblKey.Location = new System.Drawing.Point(6, 278);
             this.lblKey.Name = "lblKey";
-            this.lblKey.Size = new System.Drawing.Size(55, 19);
+            this.lblKey.Size = new System.Drawing.Size(53, 20);
             this.lblKey.TabIndex = 44;
             this.lblKey.Text = "Clave";
             // 
@@ -153,7 +153,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 283);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 19);
+            this.label6.Size = new System.Drawing.Size(0, 20);
             this.label6.TabIndex = 43;
             // 
             // button2
@@ -276,7 +276,7 @@
             this.lblKey2.AutoSize = true;
             this.lblKey2.Location = new System.Drawing.Point(12, 283);
             this.lblKey2.Name = "lblKey2";
-            this.lblKey2.Size = new System.Drawing.Size(55, 19);
+            this.lblKey2.Size = new System.Drawing.Size(53, 20);
             this.lblKey2.TabIndex = 44;
             this.lblKey2.Text = "Clave";
             // 
@@ -285,7 +285,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 283);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 19);
+            this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 43;
             // 
             // button1
@@ -420,7 +420,7 @@
             // 
             // Comparar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
@@ -431,7 +431,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
-            this.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Comparar";

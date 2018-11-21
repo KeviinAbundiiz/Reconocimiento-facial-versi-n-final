@@ -43,3 +43,22 @@ C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial 
 C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\bin\Debug\Google.Protobuf.dll
 C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\bin\Debug\MySql.Data.xml
 C:\Users\CarlosClowm\Desktop\Reconocimiento_Facial-master\Reconocimiento facial versión final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.ResultadoComparar.resources
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csprojAssemblyReference.cache
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Base_de_Datos.resources
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Comparar.resources
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Registrar.resources
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Properties.Resources.resources
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Reconocimiento.resources
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Registrar_Datos.resources
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.ResultadoComparar.resources
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csproj.GenerateResource.cache
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csproj.CoreCompileInputs.cache
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento facial.exe
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento facial.pdb
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\bin\Debug\Reconocimiento facial.exe.config
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\bin\Debug\Reconocimiento facial.exe
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\bin\Debug\Reconocimiento facial.pdb
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\bin\Debug\Google.Protobuf.dll
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\bin\Debug\MySql.Data.xml
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csproj.CopyComplete
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.BD_Datos.resources

@@ -292,7 +292,8 @@ namespace Reconocimiento_facial
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Base_de_Datos DB = new Base_de_Datos();
+            DB.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)

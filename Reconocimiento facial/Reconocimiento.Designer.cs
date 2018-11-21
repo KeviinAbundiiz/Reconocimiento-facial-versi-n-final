@@ -202,11 +202,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Blue;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(4, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(366, 19);
+            this.label1.Size = new System.Drawing.Size(366, 20);
             this.label1.TabIndex = 56;
             this.label1.Text = "Sistema de Reconocimiento - Menú Principal";
             // 
@@ -248,7 +248,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(208, 35);
             this.button2.TabIndex = 59;
-            this.button2.Text = "Reporte";
+            this.button2.Text = "Base de Datos";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

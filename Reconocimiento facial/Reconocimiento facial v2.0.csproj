@@ -79,6 +79,18 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base_de_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base_de_Datos.Designer.cs">
+      <DependentUpon>Base_de_Datos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BD_Datos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BD_Datos.Designer.cs">
+      <DependentUpon>BD_Datos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Comparar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,12 @@
     <Compile Include="ResultadoComparar.Designer.cs">
       <DependentUpon>ResultadoComparar.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Base_de_Datos.resx">
+      <DependentUpon>Base_de_Datos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BD_Datos.resx">
+      <DependentUpon>BD_Datos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Comparar.resx">
       <DependentUpon>Comparar.cs</DependentUpon>
     </EmbeddedResource>
