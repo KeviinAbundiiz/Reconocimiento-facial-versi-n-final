@@ -14,6 +14,7 @@ namespace Reconocimiento_facial
 {
     public partial class Comparar : Form
     {
+        
         DBCon dbc = new DBCon();
         int ini2 = 0, ini = 0, NumLabels, ContTrain, con=0;
         public string[] Labels, Keys;
@@ -69,7 +70,7 @@ namespace Reconocimiento_facial
 
         private void btn_minimize_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            //this.WindowState = FormWindowState.Minimized;
         }
 
         private void btn_primero_Click(object sender, EventArgs e)
@@ -127,6 +128,16 @@ namespace Reconocimiento_facial
         private void button8_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Comparar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
 
         private void button6_Click(object sender, EventArgs e)

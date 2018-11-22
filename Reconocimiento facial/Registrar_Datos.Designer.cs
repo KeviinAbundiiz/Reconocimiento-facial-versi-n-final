@@ -39,6 +39,8 @@
             this.lblFecha = new System.Windows.Forms.Label();
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.TipoImagen = new System.Windows.Forms.Label();
+            this.cbxTipoImagen = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -118,7 +120,7 @@
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Location = new System.Drawing.Point(135, 124);
+            this.btnFinalizar.Location = new System.Drawing.Point(16, 182);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
             this.btnFinalizar.TabIndex = 9;
@@ -132,18 +134,41 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(240, 122);
+            this.button1.Location = new System.Drawing.Point(217, 180);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 25);
             this.button1.TabIndex = 65;
             this.button1.Text = "Salir";
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // TipoImagen
+            // 
+            this.TipoImagen.AutoSize = true;
+            this.TipoImagen.Location = new System.Drawing.Point(13, 138);
+            this.TipoImagen.Name = "TipoImagen";
+            this.TipoImagen.Size = new System.Drawing.Size(81, 13);
+            this.TipoImagen.TabIndex = 66;
+            this.TipoImagen.Text = "Tipo de Imagen";
+            // 
+            // cbxTipoImagen
+            // 
+            this.cbxTipoImagen.FormattingEnabled = true;
+            this.cbxTipoImagen.Items.AddRange(new object[] {
+            "Persona",
+            "Saw",
+            "Barbie"});
+            this.cbxTipoImagen.Location = new System.Drawing.Point(100, 130);
+            this.cbxTipoImagen.Name = "cbxTipoImagen";
+            this.cbxTipoImagen.Size = new System.Drawing.Size(121, 21);
+            this.cbxTipoImagen.TabIndex = 67;
+            // 
             // Registrar_Datos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 159);
+            this.ClientSize = new System.Drawing.Size(351, 231);
+            this.Controls.Add(this.cbxTipoImagen);
+            this.Controls.Add(this.TipoImagen);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnFinalizar);
             this.Controls.Add(this.lblFecha);
@@ -155,6 +180,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCurp);
             this.Controls.Add(this.lblNombre);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Registrar_Datos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar_Datos";
@@ -176,5 +202,7 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label TipoImagen;
+        private System.Windows.Forms.ComboBox cbxTipoImagen;
     }
 }

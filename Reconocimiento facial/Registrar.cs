@@ -314,6 +314,11 @@ namespace Reconocimiento_facial
             this.Close();
         }
 
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
         private void Resgistrar_Load(object sender, EventArgs e)
         {
             #region[Metodo deredimension de formulario sin borde]
@@ -349,18 +354,18 @@ namespace Reconocimiento_facial
         private void StateWin()
         {
             
-            if (this.btn_maximize.Text == "1")
-            {
-                this.btn_maximize.Text = "2";
-                this.Location = new Point(0, 0);
-                this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
-            }
-            else if(this.btn_maximize.Text == "2")
-            {
-                this.btn_maximize.Text = "1";
-                this.Size = new Size(width, heigth);
-                this.StartPosition = FormStartPosition.CenterScreen;
-            }
+            //if (this.btn_maximize.Text == "1")
+            //{
+            //    this.btn_maximize.Text = "2";
+            //    this.Location = new Point(0, 0);
+            //    this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            //}
+            //else if(this.btn_maximize.Text == "2")
+            //{
+            //    this.btn_maximize.Text = "1";
+            //    this.Size = new Size(width, heigth);
+            //    this.StartPosition = FormStartPosition.CenterScreen;
+            //}
         }
        
         private void SetGripRectangle()

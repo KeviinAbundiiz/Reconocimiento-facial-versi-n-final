@@ -52,21 +52,17 @@
             this.fecha = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.btn_close = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_maximize = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_minimize = new System.Windows.Forms.ToolStripMenuItem();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.Reconocimiento = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.Reconocimiento.SuspendLayout();
             this.SuspendLayout();
@@ -348,48 +344,13 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.DodgerBlue;
             this.menuStrip1.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_close,
-            this.btn_maximize,
-            this.btn_minimize});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1278, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(1278, 24);
             this.menuStrip1.TabIndex = 45;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             this.menuStrip1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
-            // 
-            // btn_close
-            // 
-            this.btn_close.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_close.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btn_close.ForeColor = System.Drawing.Color.LightYellow;
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(33, 23);
-            this.btn_close.Text = "r";
-            this.btn_close.ToolTipText = "Cerrar";
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
-            // btn_maximize
-            // 
-            this.btn_maximize.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_maximize.ForeColor = System.Drawing.Color.LightYellow;
-            this.btn_maximize.Name = "btn_maximize";
-            this.btn_maximize.Size = new System.Drawing.Size(33, 23);
-            this.btn_maximize.Text = "1";
-            this.btn_maximize.Click += new System.EventHandler(this.btn_maximize_Click);
-            // 
-            // btn_minimize
-            // 
-            this.btn_minimize.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_minimize.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btn_minimize.Font = new System.Drawing.Font("Webdings", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.btn_minimize.ForeColor = System.Drawing.Color.LightYellow;
-            this.btn_minimize.Name = "btn_minimize";
-            this.btn_minimize.Size = new System.Drawing.Size(34, 23);
-            this.btn_minimize.Text = "0";
-            this.btn_minimize.ToolTipText = "Minimizar";
-            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
             // 
             // label5
             // 
@@ -418,20 +379,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Personas Registradas";
             // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackColor = System.Drawing.Color.Lime;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(1034, 463);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(116, 45);
-            this.button4.TabIndex = 65;
-            this.button4.Text = "Regresar a menu principal";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -455,6 +402,20 @@
             this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.Lime;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(1034, 463);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(116, 45);
+            this.button4.TabIndex = 65;
+            this.button4.Text = "Regresar a menu principal";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // Reconocimiento
             // 
@@ -497,8 +458,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imageBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.Reconocimiento.ResumeLayout(false);
@@ -532,9 +491,6 @@
         private System.Windows.Forms.Button btn_loadImgsBD;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem btn_close;
-        private System.Windows.Forms.ToolStripMenuItem btn_minimize;
-        private System.Windows.Forms.ToolStripMenuItem btn_maximize;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox3;

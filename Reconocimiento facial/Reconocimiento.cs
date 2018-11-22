@@ -20,6 +20,9 @@ namespace Reconocimiento_facial
 {
     public partial class Reconocimiento : Form
     {
+        string hora;
+        string PasarNom;
+
         #region Dlls para poder hacer el movimiento del Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -141,6 +144,17 @@ namespace Reconocimiento_facial
                     lblNumeroDetect.Text = facesDetected[0].Length.ToString();
                     lblNadie.Text = name;
 
+                    DateTime dia = DateTime.Today;/////////////////////
+
+                    string fecha = Convert.ToString(dia.ToShortDateString() + " " + hora);
+                    if (name != PasarNom)
+                    {
+                        dbc.GenerarReporte(name, fecha);
+                        PasarNom = name;
+                    }
+
+
+
                 }
                 t = 0;
 
@@ -164,6 +178,8 @@ namespace Reconocimiento_facial
 
         private void Reconocimiento_Load(object sender, EventArgs e)
         {
+            this.timer1.Enabled = true;
+
             #region[Metodo deredimension de formulario sin borde]
 
             SetGripRectangle();
@@ -262,18 +278,18 @@ namespace Reconocimiento_facial
         private void StateWin()
         {
 
-            if (this.btn_maximize.Text == "1")
-            {
-                this.btn_maximize.Text = "2";
-                this.Location = new Point(0, 0);
-                this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
-            }
-            else if (this.btn_maximize.Text == "2")
-            {
-                this.btn_maximize.Text = "1";
-                this.Size = new Size(width, heigth);
-                this.StartPosition = FormStartPosition.CenterScreen;
-            }
+            //if (this.btn_maximize.Text == "1")
+            //{
+            //    this.btn_maximize.Text = "2";
+            //    this.Location = new Point(0, 0);
+            //    this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            //}
+            //else if (this.btn_maximize.Text == "2")
+            //{
+            //    this.btn_maximize.Text = "1";
+            //    this.Size = new Size(width, heigth);
+            //    this.StartPosition = FormStartPosition.CenterScreen;
+            //}
         }
 
         private void menuStrip1_MouseDown(object sender, MouseEventArgs e)
@@ -294,6 +310,28 @@ namespace Reconocimiento_facial
         {
             Base_de_Datos DB = new Base_de_Datos();
             DB.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ReporteImagenes objeto = new ReporteImagenes();
+            objeto.Show();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            ReporteImagenes obj = new ReporteImagenes();
+            obj.Show();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.hora = DateTime.Now.ToLongTimeString();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
 
         private void button4_Click(object sender, EventArgs e)

@@ -92,7 +92,7 @@ namespace Reconocimiento_facial
 
         private void btn_minimize_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            //this.WindowState = FormWindowState.Minimized;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -100,6 +100,11 @@ namespace Reconocimiento_facial
             this.Close();
             //Regresa a menu principal
             
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

@@ -245,6 +245,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Base_de_Datos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Base_de_Datos";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

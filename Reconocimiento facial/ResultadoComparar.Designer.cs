@@ -51,15 +51,11 @@
             this.lblAltura = new System.Windows.Forms.Label();
             this.lblPeso = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.btn_close = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_maximize = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_minimize = new System.Windows.Forms.ToolStripMenuItem();
             this.label7 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picB)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // picA
@@ -270,46 +266,12 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Blue;
             this.menuStrip1.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_close,
-            this.btn_maximize,
-            this.btn_minimize});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(794, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(794, 24);
             this.menuStrip1.TabIndex = 62;
             this.menuStrip1.Text = "ITA";
-            // 
-            // btn_close
-            // 
-            this.btn_close.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_close.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btn_close.ForeColor = System.Drawing.Color.LightYellow;
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(33, 23);
-            this.btn_close.Text = "r";
-            this.btn_close.ToolTipText = "Cerrar";
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
-            // btn_maximize
-            // 
-            this.btn_maximize.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_maximize.ForeColor = System.Drawing.Color.LightYellow;
-            this.btn_maximize.Name = "btn_maximize";
-            this.btn_maximize.Size = new System.Drawing.Size(33, 23);
-            this.btn_maximize.Text = "1";
-            // 
-            // btn_minimize
-            // 
-            this.btn_minimize.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_minimize.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btn_minimize.Font = new System.Drawing.Font("Webdings", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.btn_minimize.ForeColor = System.Drawing.Color.LightYellow;
-            this.btn_minimize.Name = "btn_minimize";
-            this.btn_minimize.Size = new System.Drawing.Size(34, 23);
-            this.btn_minimize.Text = "0";
-            this.btn_minimize.ToolTipText = "Minimizar";
-            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click);
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // label7
             // 
@@ -372,8 +334,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picB)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,9 +361,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem btn_close;
-        private System.Windows.Forms.ToolStripMenuItem btn_maximize;
-        private System.Windows.Forms.ToolStripMenuItem btn_minimize;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblEdad;
         private System.Windows.Forms.Label lblAltura;

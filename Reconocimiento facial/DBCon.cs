@@ -95,10 +95,15 @@ namespace Reconocimiento_facial
             OleDbCommand comm = new OleDbCommand("DELETE FROM UserFaces WHERE Name = 'marko'", conn);
 
 
+        }
 
-
-
-
+        public bool GenerarReporte(string name, string date)
+        {
+            conn.Open();
+            OleDbCommand cmd = new OleDbCommand("INSERT INTO Reporte(Nombre,Fecha) VALUES('" + name + "','" + date + "')", conn);
+            int iResultado = cmd.ExecuteNonQuery();
+            conn.Close();
+            return Convert.ToBoolean(iResultado);
         }
     }
 }

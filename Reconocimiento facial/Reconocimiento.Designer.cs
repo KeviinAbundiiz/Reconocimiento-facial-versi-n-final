@@ -34,19 +34,16 @@
             this.imageBoxFrameGrabber = new Emgu.CV.UI.ImageBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lblNadie = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblNumeroDetect = new System.Windows.Forms.Label();
             this.elementHost1 = new System.Windows.Forms.Integration.ElementHost();
-            this.btn_close = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_maximize = new System.Windows.Forms.ToolStripMenuItem();
-            this.btn_minimize = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
             this.btnComparar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button4
@@ -117,25 +114,13 @@
             this.lblNadie.Size = new System.Drawing.Size(0, 19);
             this.lblNadie.TabIndex = 51;
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(8, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 15);
-            this.label2.TabIndex = 49;
-            this.label2.Text = "Número de Personas:";
-            // 
             // lblNumeroDetect
             // 
             this.lblNumeroDetect.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblNumeroDetect.AutoSize = true;
             this.lblNumeroDetect.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroDetect.ForeColor = System.Drawing.Color.Black;
-            this.lblNumeroDetect.Location = new System.Drawing.Point(160, 84);
+            this.lblNumeroDetect.Location = new System.Drawing.Point(66, 58);
             this.lblNumeroDetect.Name = "lblNumeroDetect";
             this.lblNumeroDetect.Size = new System.Drawing.Size(16, 16);
             this.lblNumeroDetect.TabIndex = 50;
@@ -151,51 +136,16 @@
             this.elementHost1.Text = "elementHost1";
             this.elementHost1.Child = null;
             // 
-            // btn_close
-            // 
-            this.btn_close.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_close.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btn_close.ForeColor = System.Drawing.Color.LightYellow;
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(33, 23);
-            this.btn_close.Text = "r";
-            this.btn_close.ToolTipText = "Cerrar";
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click_1);
-            // 
-            // btn_maximize
-            // 
-            this.btn_maximize.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_maximize.ForeColor = System.Drawing.Color.LightYellow;
-            this.btn_maximize.Name = "btn_maximize";
-            this.btn_maximize.Size = new System.Drawing.Size(33, 23);
-            this.btn_maximize.Text = "1";
-            this.btn_maximize.Click += new System.EventHandler(this.btn_maximize_Click);
-            // 
-            // btn_minimize
-            // 
-            this.btn_minimize.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.btn_minimize.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btn_minimize.Font = new System.Drawing.Font("Webdings", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.btn_minimize.ForeColor = System.Drawing.Color.LightYellow;
-            this.btn_minimize.Name = "btn_minimize";
-            this.btn_minimize.Size = new System.Drawing.Size(34, 23);
-            this.btn_minimize.Text = "0";
-            this.btn_minimize.ToolTipText = "Minimizar";
-            this.btn_minimize.Click += new System.EventHandler(this.btn_minimize_Click_1);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.Blue;
             this.menuStrip1.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btn_close,
-            this.btn_maximize,
-            this.btn_minimize});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(827, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(827, 24);
             this.menuStrip1.TabIndex = 55;
             this.menuStrip1.Text = "ITA";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             this.menuStrip1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuStrip1_MouseDown);
             // 
             // label1
@@ -230,7 +180,7 @@
             this.button1.BackColor = System.Drawing.Color.Lime;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(8, 316);
+            this.button1.Location = new System.Drawing.Point(8, 380);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(208, 35);
             this.button1.TabIndex = 58;
@@ -252,6 +202,24 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.Location = new System.Drawing.Point(8, 319);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(208, 44);
+            this.button5.TabIndex = 60;
+            this.button5.Text = "Reporte de Personas Reconocidas en el Sistema";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Reconocimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,6 +227,7 @@
             this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.ClientSize = new System.Drawing.Size(827, 524);
             this.ControlBox = false;
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnComparar);
@@ -269,7 +238,6 @@
             this.Controls.Add(this.imageBoxFrameGrabber);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblNadie);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNumeroDetect);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Reconocimiento";
@@ -278,8 +246,6 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Reconocimiento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,15 +259,13 @@
         private Emgu.CV.UI.ImageBox imageBoxFrameGrabber;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblNadie;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblNumeroDetect;
-        private System.Windows.Forms.ToolStripMenuItem btn_close;
-        private System.Windows.Forms.ToolStripMenuItem btn_maximize;
-        private System.Windows.Forms.ToolStripMenuItem btn_minimize;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnComparar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Timer timer1;
     }
 }
