@@ -51,7 +51,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.lblKey);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.button2);
@@ -211,6 +211,8 @@
             // lblKeyMax
             // 
             this.lblKeyMax.AutoSize = true;
+            this.lblKeyMax.BackColor = System.Drawing.Color.Transparent;
+            this.lblKeyMax.ForeColor = System.Drawing.Color.White;
             this.lblKeyMax.Location = new System.Drawing.Point(501, 290);
             this.lblKeyMax.Name = "lblKeyMax";
             this.lblKeyMax.Size = new System.Drawing.Size(34, 13);
@@ -220,7 +222,9 @@
             // lblProcentaje
             // 
             this.lblProcentaje.AutoSize = true;
+            this.lblProcentaje.BackColor = System.Drawing.Color.Transparent;
             this.lblProcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProcentaje.ForeColor = System.Drawing.Color.White;
             this.lblProcentaje.Location = new System.Drawing.Point(593, 355);
             this.lblProcentaje.Name = "lblProcentaje";
             this.lblProcentaje.Size = new System.Drawing.Size(112, 25);
@@ -231,13 +235,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackgroundImage = global::Reconocimiento_facial.Properties.Resources.orig_92045;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(797, 504);
             this.Controls.Add(this.lblProcentaje);
             this.Controls.Add(this.lblKeyMax);
             this.Controls.Add(this.pcbMax);
             this.Controls.Add(this.btnComparar);
             this.Controls.Add(this.groupBox3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Comparar_Automatico";
             this.Text = "Comparar_Automatico";
             this.groupBox3.ResumeLayout(false);

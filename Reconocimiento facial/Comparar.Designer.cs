@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblKey = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -42,6 +43,7 @@
             this.btn_primero = new System.Windows.Forms.Button();
             this.btn_loadImgsBD = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.lblKey2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -54,8 +56,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.lblComparar = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -66,7 +66,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Blue;
+            this.menuStrip1.BackColor = System.Drawing.Color.DarkGray;
             this.menuStrip1.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -78,7 +78,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Blue;
+            this.label1.BackColor = System.Drawing.Color.DarkGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(12, 4);
@@ -89,6 +89,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.lblKey);
             this.groupBox3.Controls.Add(this.label6);
@@ -102,6 +103,15 @@
             this.groupBox3.Size = new System.Drawing.Size(359, 447);
             this.groupBox3.TabIndex = 59;
             this.groupBox3.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, -4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.TabIndex = 68;
+            this.label2.Text = "Imagen";
             // 
             // lblKey
             // 
@@ -222,6 +232,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.lblKey2);
             this.groupBox1.Controls.Add(this.label3);
@@ -235,6 +246,15 @@
             this.groupBox1.Size = new System.Drawing.Size(359, 447);
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, -4);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(167, 20);
+            this.label4.TabIndex = 69;
+            this.label4.Text = "Imagen a Comparar";
             // 
             // lblKey2
             // 
@@ -383,30 +403,14 @@
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, -4);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
-            this.label2.TabIndex = 68;
-            this.label2.Text = "Imagen";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, -4);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(167, 20);
-            this.label4.TabIndex = 69;
-            this.label4.Text = "Imagen a Comparar";
-            // 
             // Comparar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackgroundImage = global::Reconocimiento_facial.Properties.Resources.orig_92045;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(861, 485);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.lblComparar);

@@ -52,7 +52,7 @@
             this.button4.AutoSize = true;
             this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(8, 112);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(208, 35);
@@ -66,7 +66,7 @@
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button3.BackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Black;
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(8, 163);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(208, 35);
@@ -80,6 +80,7 @@
             this.imageBoxFrameGrabber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.imageBoxFrameGrabber.BackColor = System.Drawing.Color.DarkGray;
             this.imageBoxFrameGrabber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imageBoxFrameGrabber.Location = new System.Drawing.Point(226, 30);
             this.imageBoxFrameGrabber.Name = "imageBoxFrameGrabber";
@@ -94,8 +95,9 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(5, 30);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(141, 15);
@@ -118,8 +120,9 @@
             // 
             this.lblNumeroDetect.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblNumeroDetect.AutoSize = true;
+            this.lblNumeroDetect.BackColor = System.Drawing.Color.Transparent;
             this.lblNumeroDetect.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumeroDetect.ForeColor = System.Drawing.Color.Black;
+            this.lblNumeroDetect.ForeColor = System.Drawing.Color.White;
             this.lblNumeroDetect.Location = new System.Drawing.Point(66, 58);
             this.lblNumeroDetect.Name = "lblNumeroDetect";
             this.lblNumeroDetect.Size = new System.Drawing.Size(16, 16);
@@ -138,7 +141,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Blue;
+            this.menuStrip1.BackColor = System.Drawing.Color.DarkGray;
             this.menuStrip1.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -151,10 +154,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Blue;
+            this.label1.BackColor = System.Drawing.Color.DarkGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(4, 8);
+            this.label1.Location = new System.Drawing.Point(4, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(366, 20);
             this.label1.TabIndex = 56;
@@ -165,7 +168,7 @@
             this.btnComparar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnComparar.BackColor = System.Drawing.Color.Transparent;
             this.btnComparar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnComparar.ForeColor = System.Drawing.Color.Black;
+            this.btnComparar.ForeColor = System.Drawing.Color.White;
             this.btnComparar.Location = new System.Drawing.Point(8, 214);
             this.btnComparar.Name = "btnComparar";
             this.btnComparar.Size = new System.Drawing.Size(208, 35);
@@ -179,7 +182,7 @@
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button1.BackColor = System.Drawing.Color.Lime;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(8, 380);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(208, 35);
@@ -193,7 +196,7 @@
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(8, 265);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(208, 35);
@@ -207,7 +210,7 @@
             this.button5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button5.BackColor = System.Drawing.Color.Transparent;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.Color.Black;
+            this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.Location = new System.Drawing.Point(8, 319);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(208, 44);
@@ -224,7 +227,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackgroundImage = global::Reconocimiento_facial.Properties.Resources.orig_92045;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(827, 524);
             this.ControlBox = false;
             this.Controls.Add(this.button5);

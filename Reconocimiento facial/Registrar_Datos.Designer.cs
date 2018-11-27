@@ -46,6 +46,8 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.ForeColor = System.Drawing.Color.White;
             this.lblNombre.Location = new System.Drawing.Point(13, 13);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(44, 13);
@@ -55,6 +57,8 @@
             // lblCurp
             // 
             this.lblCurp.AutoSize = true;
+            this.lblCurp.BackColor = System.Drawing.Color.Transparent;
+            this.lblCurp.ForeColor = System.Drawing.Color.White;
             this.lblCurp.Location = new System.Drawing.Point(259, 13);
             this.lblCurp.Name = "lblCurp";
             this.lblCurp.Size = new System.Drawing.Size(29, 13);
@@ -64,6 +68,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(11, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
@@ -87,6 +93,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(170, 49);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
@@ -96,6 +104,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(13, 96);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
@@ -112,6 +122,8 @@
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
+            this.lblFecha.BackColor = System.Drawing.Color.Transparent;
+            this.lblFecha.ForeColor = System.Drawing.Color.White;
             this.lblFecha.Location = new System.Drawing.Point(214, 96);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(74, 13);
@@ -120,12 +132,15 @@
             // 
             // btnFinalizar
             // 
+            this.btnFinalizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFinalizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinalizar.ForeColor = System.Drawing.Color.White;
             this.btnFinalizar.Location = new System.Drawing.Point(16, 182);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
+            this.btnFinalizar.Size = new System.Drawing.Size(96, 23);
             this.btnFinalizar.TabIndex = 9;
             this.btnFinalizar.Text = "Finalizar";
-            this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.UseVisualStyleBackColor = false;
             this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
             // 
             // button1
@@ -133,7 +148,7 @@
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(217, 180);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 25);
@@ -144,6 +159,8 @@
             // TipoImagen
             // 
             this.TipoImagen.AutoSize = true;
+            this.TipoImagen.BackColor = System.Drawing.Color.Transparent;
+            this.TipoImagen.ForeColor = System.Drawing.Color.White;
             this.TipoImagen.Location = new System.Drawing.Point(13, 138);
             this.TipoImagen.Name = "TipoImagen";
             this.TipoImagen.Size = new System.Drawing.Size(81, 13);
@@ -166,6 +183,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Reconocimiento_facial.Properties.Resources.orig_92045;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(351, 231);
             this.Controls.Add(this.cbxTipoImagen);
             this.Controls.Add(this.TipoImagen);
@@ -180,6 +199,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCurp);
             this.Controls.Add(this.lblNombre);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Registrar_Datos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

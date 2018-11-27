@@ -72,7 +72,7 @@
             this.imageBoxFrameGrabber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.imageBoxFrameGrabber.BackColor = System.Drawing.Color.Blue;
+            this.imageBoxFrameGrabber.BackColor = System.Drawing.Color.DarkGray;
             this.imageBoxFrameGrabber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imageBoxFrameGrabber.Location = new System.Drawing.Point(6, 19);
             this.imageBoxFrameGrabber.Name = "imageBoxFrameGrabber";
@@ -155,7 +155,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.BackColor = System.Drawing.Color.Blue;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.imageBox2);
             this.groupBox1.Controls.Add(this.button3);
@@ -342,7 +342,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.menuStrip1.BackColor = System.Drawing.Color.DarkGray;
             this.menuStrip1.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -355,10 +355,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.DodgerBlue;
+            this.label5.BackColor = System.Drawing.Color.DarkGray;
             this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(11, 8);
+            this.label5.Location = new System.Drawing.Point(12, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(359, 19);
             this.label5.TabIndex = 57;
@@ -366,6 +366,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.pictureBox1);
@@ -419,6 +420,7 @@
             // 
             // Reconocimiento
             // 
+            this.Reconocimiento.BackColor = System.Drawing.Color.Transparent;
             this.Reconocimiento.Controls.Add(this.imageBoxFrameGrabber);
             this.Reconocimiento.Controls.Add(this.btn_detectar);
             this.Reconocimiento.Controls.Add(this.button1);
@@ -436,7 +438,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Blue;
+            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackgroundImage = global::Reconocimiento_facial.Properties.Resources.orig_92045;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1278, 520);
             this.ControlBox = false;
             this.Controls.Add(this.button4);

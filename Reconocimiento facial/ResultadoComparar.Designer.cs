@@ -82,6 +82,8 @@
             // lblKey
             // 
             this.lblKey.AutoSize = true;
+            this.lblKey.BackColor = System.Drawing.Color.Transparent;
+            this.lblKey.ForeColor = System.Drawing.Color.White;
             this.lblKey.Location = new System.Drawing.Point(12, 310);
             this.lblKey.Name = "lblKey";
             this.lblKey.Size = new System.Drawing.Size(34, 13);
@@ -91,6 +93,8 @@
             // lblKey2
             // 
             this.lblKey2.AutoSize = true;
+            this.lblKey2.BackColor = System.Drawing.Color.Transparent;
+            this.lblKey2.ForeColor = System.Drawing.Color.White;
             this.lblKey2.Location = new System.Drawing.Point(498, 310);
             this.lblKey2.Name = "lblKey2";
             this.lblKey2.Size = new System.Drawing.Size(34, 13);
@@ -100,7 +104,8 @@
             // lblPeso1
             // 
             this.lblPeso1.AutoSize = true;
-            this.lblPeso1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblPeso1.BackColor = System.Drawing.Color.Transparent;
+            this.lblPeso1.ForeColor = System.Drawing.Color.White;
             this.lblPeso1.Location = new System.Drawing.Point(259, 337);
             this.lblPeso1.Name = "lblPeso1";
             this.lblPeso1.Size = new System.Drawing.Size(31, 13);
@@ -110,6 +115,8 @@
             // lblAltura1
             // 
             this.lblAltura1.AutoSize = true;
+            this.lblAltura1.BackColor = System.Drawing.Color.Transparent;
+            this.lblAltura1.ForeColor = System.Drawing.Color.White;
             this.lblAltura1.Location = new System.Drawing.Point(259, 368);
             this.lblAltura1.Name = "lblAltura1";
             this.lblAltura1.Size = new System.Drawing.Size(34, 13);
@@ -119,6 +126,8 @@
             // lblFecha1
             // 
             this.lblFecha1.AutoSize = true;
+            this.lblFecha1.BackColor = System.Drawing.Color.Transparent;
+            this.lblFecha1.ForeColor = System.Drawing.Color.White;
             this.lblFecha1.Location = new System.Drawing.Point(12, 352);
             this.lblFecha1.Name = "lblFecha1";
             this.lblFecha1.Size = new System.Drawing.Size(37, 13);
@@ -128,6 +137,8 @@
             // lblEdad1
             // 
             this.lblEdad1.AutoSize = true;
+            this.lblEdad1.BackColor = System.Drawing.Color.Transparent;
+            this.lblEdad1.ForeColor = System.Drawing.Color.White;
             this.lblEdad1.Location = new System.Drawing.Point(259, 404);
             this.lblEdad1.Name = "lblEdad1";
             this.lblEdad1.Size = new System.Drawing.Size(32, 13);
@@ -137,6 +148,8 @@
             // lblEdad2
             // 
             this.lblEdad2.AutoSize = true;
+            this.lblEdad2.BackColor = System.Drawing.Color.Transparent;
+            this.lblEdad2.ForeColor = System.Drawing.Color.White;
             this.lblEdad2.Location = new System.Drawing.Point(748, 404);
             this.lblEdad2.Name = "lblEdad2";
             this.lblEdad2.Size = new System.Drawing.Size(32, 13);
@@ -146,6 +159,8 @@
             // lblAltura2
             // 
             this.lblAltura2.AutoSize = true;
+            this.lblAltura2.BackColor = System.Drawing.Color.Transparent;
+            this.lblAltura2.ForeColor = System.Drawing.Color.White;
             this.lblAltura2.Location = new System.Drawing.Point(748, 368);
             this.lblAltura2.Name = "lblAltura2";
             this.lblAltura2.Size = new System.Drawing.Size(34, 13);
@@ -155,6 +170,8 @@
             // lblPeso2
             // 
             this.lblPeso2.AutoSize = true;
+            this.lblPeso2.BackColor = System.Drawing.Color.Transparent;
+            this.lblPeso2.ForeColor = System.Drawing.Color.White;
             this.lblPeso2.Location = new System.Drawing.Point(748, 337);
             this.lblPeso2.Name = "lblPeso2";
             this.lblPeso2.Size = new System.Drawing.Size(31, 13);
@@ -164,6 +181,8 @@
             // lblFecha2
             // 
             this.lblFecha2.AutoSize = true;
+            this.lblFecha2.BackColor = System.Drawing.Color.Transparent;
+            this.lblFecha2.ForeColor = System.Drawing.Color.White;
             this.lblFecha2.Location = new System.Drawing.Point(498, 352);
             this.lblFecha2.Name = "lblFecha2";
             this.lblFecha2.Size = new System.Drawing.Size(37, 13);
@@ -173,6 +192,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(219, 404);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 13);
@@ -182,6 +203,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(219, 368);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
@@ -191,6 +214,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(219, 337);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
@@ -200,6 +225,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(711, 404);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
@@ -209,6 +236,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(711, 368);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 13);
@@ -218,6 +247,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(711, 337);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(31, 13);
@@ -226,7 +257,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.lblEdad);
             this.groupBox1.Controls.Add(this.lblAltura);
             this.groupBox1.Controls.Add(this.lblPeso);
@@ -239,6 +270,7 @@
             // lblEdad
             // 
             this.lblEdad.AutoSize = true;
+            this.lblEdad.ForeColor = System.Drawing.Color.White;
             this.lblEdad.Location = new System.Drawing.Point(38, 94);
             this.lblEdad.Name = "lblEdad";
             this.lblEdad.Size = new System.Drawing.Size(32, 13);
@@ -248,6 +280,7 @@
             // lblAltura
             // 
             this.lblAltura.AutoSize = true;
+            this.lblAltura.ForeColor = System.Drawing.Color.White;
             this.lblAltura.Location = new System.Drawing.Point(36, 58);
             this.lblAltura.Name = "lblAltura";
             this.lblAltura.Size = new System.Drawing.Size(34, 13);
@@ -257,6 +290,7 @@
             // lblPeso
             // 
             this.lblPeso.AutoSize = true;
+            this.lblPeso.ForeColor = System.Drawing.Color.White;
             this.lblPeso.Location = new System.Drawing.Point(39, 27);
             this.lblPeso.Name = "lblPeso";
             this.lblPeso.Size = new System.Drawing.Size(31, 13);
@@ -265,7 +299,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Blue;
+            this.menuStrip1.BackColor = System.Drawing.Color.DarkGray;
             this.menuStrip1.Font = new System.Drawing.Font("Webdings", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -277,10 +311,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Blue;
+            this.label7.BackColor = System.Drawing.Color.DarkGray;
             this.label7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(8, 8);
+            this.label7.Location = new System.Drawing.Point(8, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(453, 19);
             this.label7.TabIndex = 63;
@@ -291,7 +325,7 @@
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.BackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Location = new System.Drawing.Point(333, 368);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(116, 45);
@@ -303,7 +337,9 @@
             // lblPorcentaje
             // 
             this.lblPorcentaje.AutoSize = true;
+            this.lblPorcentaje.BackColor = System.Drawing.Color.Transparent;
             this.lblPorcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentaje.ForeColor = System.Drawing.Color.White;
             this.lblPorcentaje.Location = new System.Drawing.Point(353, 149);
             this.lblPorcentaje.Name = "lblPorcentaje";
             this.lblPorcentaje.Size = new System.Drawing.Size(58, 24);
@@ -314,7 +350,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackgroundImage = global::Reconocimiento_facial.Properties.Resources.orig_92045;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(794, 462);
             this.Controls.Add(this.lblPorcentaje);
             this.Controls.Add(this.button4);
@@ -339,6 +377,7 @@
             this.Controls.Add(this.lblKey);
             this.Controls.Add(this.picB);
             this.Controls.Add(this.picA);
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ResultadoComparar";
             this.Text = "ResultadoComparar";
