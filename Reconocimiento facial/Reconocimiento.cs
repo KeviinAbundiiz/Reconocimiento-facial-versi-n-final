@@ -83,7 +83,7 @@ namespace Reconocimiento_facial
             }
             catch (Exception e)
             {
-                MessageBox.Show(e + "No hay ningun rosto registrado).", "Cargar rostros", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show(e + "No hay ningun rostro registrado).", "Cargar rostros", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
         
@@ -271,8 +271,9 @@ namespace Reconocimiento_facial
         private void btnComparar_Click(object sender, EventArgs e)
         {
             Desconectar();
-            Comparar cmp = new Comparar();
-            cmp.ShowDialog();
+            Manual_Automatico MA = new Manual_Automatico();
+            MA.Show();
+
         }
 
         private void StateWin()

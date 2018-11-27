@@ -80,3 +80,6 @@ C:\Users\Abund\Downloads\Reconocimiento-facial-versi-n-final-master\Reconocimien
 C:\Users\Abund\Downloads\Reconocimiento-facial-versi-n-final-master\Reconocimiento facial\obj\Debug\Reconocimiento_facial.ReporteImagenes.resources
 C:\Users\Abund\Downloads\Reconocimiento-facial-versi-n-final-master\Reconocimiento facial\obj\Debug\Reconocimiento_facial.ResultadoComparar.resources
 C:\Users\Abund\Downloads\Reconocimiento-facial-versi-n-final-master\Reconocimiento facial\obj\Debug\Reconocimiento facial v2.0.csproj.GenerateResource.Cache
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.ReporteImagenes.resources
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Manual_Automatico.resources
+C:\Users\CarlosClowm\Documents\GitHub\Reconocimiento-facial-versi-n-final\Reconocimiento facial\obj\Debug\Reconocimiento_facial.Comparar_Automatico.resources

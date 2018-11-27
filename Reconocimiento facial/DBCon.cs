@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
@@ -12,15 +13,24 @@ namespace Reconocimiento_facial
 {
     public class DBCon
     {
-        private OleDbConnection conn;
+        public OleDbConnection conn;
         public string[] Name, Key;
         private byte[] face;
         public List<byte[]> Face = new List<byte[]>();
         public int TotalUser;
+
+        
         public DBCon()
         {
             conn = new OleDbConnection("Provider = Microsoft.Jet.OLEDB.4.0; Data Source = UsersFace.mdb");
             conn.Open();
+        }
+
+        public MySqlConnection MySql()
+        {
+            MySqlConnection con = new MySqlConnection();
+            con.ConnectionString = "Server=localhost;Port=3306;Database=facedata;Uid=root;Pwd=peluche785;SslMode=none";
+            return con;
         }
         public bool GuardarImagen(string Name, string Code, byte[] abImagen)
         {

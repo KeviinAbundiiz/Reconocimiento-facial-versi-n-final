@@ -15,7 +15,7 @@ namespace Reconocimiento_facial
     public partial class Base_de_Datos : Form
     {
         DBCon dbc = new DBCon();
-        int ini2 = 0, ini = 0, NumLabels, ContTrain, con = 0;
+        int ini = 0, NumLabels, ContTrain, con = 0;
         public string[] Labels, Keys;
 
         private void button8_Click(object sender, EventArgs e)

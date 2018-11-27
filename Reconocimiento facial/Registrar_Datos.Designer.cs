@@ -155,8 +155,8 @@
             this.cbxTipoImagen.FormattingEnabled = true;
             this.cbxTipoImagen.Items.AddRange(new object[] {
             "Persona",
-            "Saw",
-            "Barbie"});
+            "Robot",
+            "Objeto"});
             this.cbxTipoImagen.Location = new System.Drawing.Point(100, 130);
             this.cbxTipoImagen.Name = "cbxTipoImagen";
             this.cbxTipoImagen.Size = new System.Drawing.Size(121, 21);

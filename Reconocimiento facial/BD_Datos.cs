@@ -26,8 +26,8 @@ namespace Reconocimiento_facial
 
         private void Cargar()
         {
-            MySqlConnection con = new MySqlConnection();
-            con.ConnectionString = "Server=localhost;Port=3306;Database=facedata;Uid=root;Pwd=peluche785;SslMode=none";
+            DBCon DB = new DBCon();
+            MySqlConnection con = DB.MySql();
             try
             {
                 string query = "Select * From datos Where curp='" + txtCurp.Text + "';";

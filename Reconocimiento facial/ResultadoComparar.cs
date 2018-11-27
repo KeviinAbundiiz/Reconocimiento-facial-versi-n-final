@@ -83,6 +83,8 @@ namespace Reconocimiento_facial
             //---
             lblEdad.Text = Convert.ToDouble((Convert.ToDouble(lblEdad1.Text) - Convert.ToDouble(lblEdad2.Text))/100).ToString() + "%";
             //---
+
+            lblPorcentaje.Text = (Convert.ToDouble((Convert.ToInt32(lblPeso1.Text) - Convert.ToInt32(lblPeso2.Text)) / 100.00) + Convert.ToDouble((Convert.ToDouble(lblAltura1.Text) - Convert.ToDouble(lblAltura2.Text)) / 100) + Convert.ToDouble((Convert.ToDouble(lblEdad1.Text) - Convert.ToDouble(lblEdad2.Text)) / 100)).ToString()+" %";
         }
 
         private void btn_close_Click(object sender, EventArgs e)

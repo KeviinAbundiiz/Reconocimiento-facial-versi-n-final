@@ -27,7 +27,7 @@ namespace Reconocimiento_facial
             try
             {
                 MySqlCommand cmd = con.CreateCommand();
-                cmd.CommandText = "insert into datos values('" + lblCurp.Text + "', '" + txtPeso.Text + "', '" + txtAltura.Text + "', '" + lblFecha.Text + "', '" + txtEdad.Text + "');";
+                cmd.CommandText = "insert into datos values('" + lblCurp.Text + "', '" + txtPeso.Text + "', '" + txtAltura.Text + "', '" + lblFecha.Text + "', '" + txtEdad.Text + "', '"+cbxTipoImagen.Text+"');";
                 con.Open();
                 cmd.ExecuteNonQuery();
                 con.Close();

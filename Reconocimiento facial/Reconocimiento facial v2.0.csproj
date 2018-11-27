@@ -97,7 +97,19 @@
     <Compile Include="Comparar.Designer.cs">
       <DependentUpon>Comparar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Comparar_Automatico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comparar_Automatico.Designer.cs">
+      <DependentUpon>Comparar_Automatico.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBCon.cs" />
+    <Compile Include="Manual_Automatico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual_Automatico.Designer.cs">
+      <DependentUpon>Manual_Automatico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +150,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Comparar.resx">
       <DependentUpon>Comparar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comparar_Automatico.resx">
+      <DependentUpon>Comparar_Automatico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual_Automatico.resx">
+      <DependentUpon>Manual_Automatico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
