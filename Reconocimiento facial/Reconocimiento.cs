@@ -309,18 +309,21 @@ namespace Reconocimiento_facial
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Desconectar();
             Base_de_Datos DB = new Base_de_Datos();
             DB.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Desconectar();
             ReporteImagenes objeto = new ReporteImagenes();
             objeto.Show();
         }
 
         private void button5_Click_1(object sender, EventArgs e)
         {
+            Desconectar();
             ReporteImagenes obj = new ReporteImagenes();
             obj.Show();
         }

@@ -42,7 +42,9 @@
             this.btnComparar = new System.Windows.Forms.Button();
             this.pcbMax = new System.Windows.Forms.PictureBox();
             this.lblKeyMax = new System.Windows.Forms.Label();
-            this.lblProcentaje = new System.Windows.Forms.Label();
+            this.lblPorcentaje = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.fecha = new System.Windows.Forms.DateTimePicker();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -219,17 +221,40 @@
             this.lblKeyMax.TabIndex = 45;
             this.lblKeyMax.Text = "Clave";
             // 
-            // lblProcentaje
+            // lblPorcentaje
             // 
-            this.lblProcentaje.AutoSize = true;
-            this.lblProcentaje.BackColor = System.Drawing.Color.Transparent;
-            this.lblProcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProcentaje.ForeColor = System.Drawing.Color.White;
-            this.lblProcentaje.Location = new System.Drawing.Point(593, 355);
-            this.lblProcentaje.Name = "lblProcentaje";
-            this.lblProcentaje.Size = new System.Drawing.Size(112, 25);
-            this.lblProcentaje.TabIndex = 63;
-            this.lblProcentaje.Text = "Porciento";
+            this.lblPorcentaje.AutoSize = true;
+            this.lblPorcentaje.BackColor = System.Drawing.Color.Transparent;
+            this.lblPorcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorcentaje.ForeColor = System.Drawing.Color.White;
+            this.lblPorcentaje.Location = new System.Drawing.Point(593, 355);
+            this.lblPorcentaje.Name = "lblPorcentaje";
+            this.lblPorcentaje.Size = new System.Drawing.Size(112, 25);
+            this.lblPorcentaje.TabIndex = 63;
+            this.lblPorcentaje.Text = "Porciento";
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(377, 447);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(116, 45);
+            this.button4.TabIndex = 67;
+            this.button4.Text = "Regresar a menu principal";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // fecha
+            // 
+            this.fecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fecha.Location = new System.Drawing.Point(598, 457);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(84, 20);
+            this.fecha.TabIndex = 68;
             // 
             // Comparar_Automatico
             // 
@@ -239,7 +264,9 @@
             this.BackgroundImage = global::Reconocimiento_facial.Properties.Resources.orig_92045;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(797, 504);
-            this.Controls.Add(this.lblProcentaje);
+            this.Controls.Add(this.fecha);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.lblPorcentaje);
             this.Controls.Add(this.lblKeyMax);
             this.Controls.Add(this.pcbMax);
             this.Controls.Add(this.btnComparar);
@@ -273,6 +300,8 @@
         private System.Windows.Forms.Button btnComparar;
         private System.Windows.Forms.PictureBox pcbMax;
         private System.Windows.Forms.Label lblKeyMax;
-        private System.Windows.Forms.Label lblProcentaje;
+        private System.Windows.Forms.Label lblPorcentaje;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DateTimePicker fecha;
     }
 }

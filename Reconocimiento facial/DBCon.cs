@@ -14,7 +14,7 @@ namespace Reconocimiento_facial
     public class DBCon
     {
         public OleDbConnection conn;
-        public string[] Name, Key;
+        public string[] Name, Key, Peso, Altura, Fecha, Edad, Tipo_Imagen;
         private byte[] face;
         public List<byte[]> Face = new List<byte[]>();
         public int TotalUser;
@@ -26,16 +26,9 @@ namespace Reconocimiento_facial
             conn.Open();
         }
 
-        public MySqlConnection MySql()
+        public bool GuardarImagen(string Name, string Code, byte[] abImagen, double peso, double altura, string fecha, int edad, string tipo_imagen)
         {
-            MySqlConnection con = new MySqlConnection();
-            con.ConnectionString = "Server=localhost;Port=3306;Database=facedata;Uid=root;Pwd=peluche785;SslMode=none";
-            return con;
-        }
-        public bool GuardarImagen(string Name, string Code, byte[] abImagen)
-        {
-            conn.Open();
-            OleDbCommand comm = new OleDbCommand("INSERT INTO UserFaces (Name,Code,Face) VALUES ('" + Name + "','" + Code + "',?)", conn);           
+            OleDbCommand comm = new OleDbCommand("INSERT INTO UserFaces (Name,Code,Face,peso,altura, fecha, edad, tipo_imagen) VALUES ('" + Name + "','" + Code + "',?,'"+peso+"','"+altura+"','"+fecha+"','"+edad+"','"+tipo_imagen+"')", conn);           
             OleDbParameter parImagen = new OleDbParameter("@Face", OleDbType.VarBinary, abImagen.Length);
             parImagen.Value = abImagen;
             comm.Parameters.Add(parImagen);            
@@ -44,9 +37,49 @@ namespace Reconocimiento_facial
             return Convert.ToBoolean(iResultado);
         }
 
+        public void EditarDatos(string curp, string fecha, string peso, string altura, string edad, string curp_o)
+        {
+            try
+            {
+                OleDbCommand comm = new OleDbCommand("UPDATE UserFaces SET Code='" + curp + "', fecha='" + fecha + "',peso='" + peso + "', altura='" + altura + "', edad='" + edad + "' WHERE Code='" + curp_o + "'", conn);
+                comm.ExecuteNonQuery();
+                conn.Close();
+                System.Windows.Forms.MessageBox.Show("Datos Actualizados");
+            }catch(Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+            
+        }
+
+        public void GeneraReporte(string modo, string curp1, string curp2, string porciento, string fecha)
+        {
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            OleDbCommand comm = new OleDbCommand("INSERT INTO Reportes (modo, curp1, curp2, porciento, fecha) VALUES('"+modo+"', '"+curp1+"', '"+curp2+"', '"+porciento+"', '"+fecha+"')", conn);
+            comm.ExecuteNonQuery();
+            conn.Close();
+        }
+
+        public int ExtraerDatos(string curp)
+        {
+            for(int i = 0; i < TotalUser; i++)
+            {
+                if (Key[i] == curp)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+
+
         public DataTable ObtenerBytesImagen()
         {
-            string sql = "SELECT IdImage,Name,Code,Face FROM UserFaces";
+            string sql = "SELECT IdImage,Name,Code,Face,peso,altura,fecha,edad,tipo_imagen FROM UserFaces";
 
             OleDbDataAdapter adaptador = new OleDbDataAdapter(sql, conn);
         
@@ -56,11 +89,21 @@ namespace Reconocimiento_facial
             int cont = dt.Rows.Count;
             Name = new string[cont];
             Key = new string[cont];
+            Peso = new string[cont];
+            Altura = new string[cont];
+            Fecha = new string[cont];
+            Edad = new string[cont];
+            Tipo_Imagen = new string[cont];
 
             for (int i = 0; i < cont; i++)
             {
                 Name[i] = dt.Rows[i]["Name"].ToString();
                 Key[i] = dt.Rows[i]["Code"].ToString();
+                Peso[i] = dt.Rows[i]["peso"].ToString();
+                Altura[i] = dt.Rows[i]["altura"].ToString();
+                Fecha[i] = dt.Rows[i]["fecha"].ToString();
+                Edad[i] = dt.Rows[i]["edad"].ToString();
+                Tipo_Imagen[i] = dt.Rows[i]["tipo_imagen"].ToString();
                 face = (byte[])dt.Rows[i]["Face"];
                 Face.Add(face);
             }
@@ -69,14 +112,14 @@ namespace Reconocimiento_facial
             return dt;
         }
 
-        public void ConvertImgToBinary(string Name, string Code, Image Img)
+        public void ConvertImgToBinary(string Name, string Code, Image Img, double peso, double altura, string fecha, int edad, string tipo_imagen)
         {
             Bitmap bmp = new Bitmap(Img);
             MemoryStream MyStream = new MemoryStream();
             bmp.Save(MyStream, System.Drawing.Imaging.ImageFormat.Bmp);
 
             byte[] abImagen = MyStream.ToArray();
-            GuardarImagen(Name, Code, abImagen);
+            GuardarImagen(Name, Code, abImagen, peso, altura, fecha, edad, tipo_imagen);
         }
 
         public Image ConvertByteToImg( int con)

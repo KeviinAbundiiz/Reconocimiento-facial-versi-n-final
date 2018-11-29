@@ -66,6 +66,7 @@ namespace Reconocimiento_facial
         {
             BD_Datos BDD = new BD_Datos(pictureBox1.Image, lblKey.Text);
             BDD.ShowDialog();
+            button2.PerformClick();
         }
 
         List<Image<Gray, byte>> trainingImages = new List<Image<Gray, byte>>();
@@ -102,6 +103,7 @@ namespace Reconocimiento_facial
 
         private void btn_loadImgsBD_Click(object sender, EventArgs e)
         {
+            dbc.ObtenerBytesImagen();
             groupBox2.Enabled = true;
             pictureBox1.Image = dbc.ConvertByteToImg(0);
             lblKey.Text = dbc.Key[0];

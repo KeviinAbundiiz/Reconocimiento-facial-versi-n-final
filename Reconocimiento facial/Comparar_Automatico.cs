@@ -70,114 +70,51 @@ namespace Reconocimiento_facial
 
         private void btnComparar_Click(object sender, EventArgs e)
         {
-            ExtraerComparar();
-        }
+            string MaxC = "";
+            int MaxP = 0;
 
-        string MaxCurp = "";
-        double MaxPor = -1;
-        byte[] MaxFace;
-
-        private void ExtraerComparar()
-        {
-            DBCon DB = new DBCon();
-            MySqlConnection con = DB.MySql();
-            try
+            DBCon DC = new DBCon();
+            DC.ObtenerBytesImagen();
+            int n;
+            n = DC.ExtraerDatos(lblKey.Text);
+            for (int i = 0; i < DC.TotalUser; i++)
             {
-                string query = "Select * From datos ;";
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                MySqlDataReader datos = cmd.ExecuteReader();
-                while (datos.Read())
+                if (i != n)
                 {
-                    Compara(lblKey.Text, datos["curp"].ToString());
-                }
-                
-                datos.Close();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            lblKeyMax.Text = MaxCurp;
-            string ResPor = Regex.Replace(MaxPor.ToString(), @"-", "");
-            lblProcentaje.Text = ResPor;
-            Image FetImg;
-            MemoryStream ms = new MemoryStream(MaxFace);
-            FetImg = Image.FromStream(ms);
-            pcbMax.Image = FetImg;
-
-        }
-
-
-
-        private void Compara(string curp, string comparar)
-        {
-            double Peso=0, Altura=0, Edad=0;
-            DBCon DB = new DBCon();
-            MySqlConnection con = DB.MySql();
-            try
-            {
-                string query = "Select * From datos where curp='"+curp+"';";
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                MySqlDataReader datos = cmd.ExecuteReader();
-                while (datos.Read())
-                {
-                    Peso = Convert.ToDouble(datos["peso"].ToString());
-                    Altura = Convert.ToDouble(datos["altura"].ToString());
-                    Edad = Convert.ToDouble(datos["edad"].ToString());
-
-                }
-
-                datos.Close();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            //-------------------------
-            double pes, alt, ed;
-            try
-            {
-                string query = "Select * From datos where curp='" + comparar + "' and curp!='"+curp+"';";
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                MySqlDataReader datos = cmd.ExecuteReader();
-                while (datos.Read())
-                {
-                    pes = Peso - Convert.ToDouble(datos["peso"].ToString());
-                    alt = Altura - Convert.ToDouble(datos["altura"].ToString());
-                    ed = Edad - Convert.ToDouble(datos["edad"].ToString());
-                    if ((pes + alt + ed) > MaxPor)
+                    int CPeso = porciento(Convert.ToInt32(DC.Peso[i]), Convert.ToInt32(DC.Peso[n]));
+                    int CAltura = porciento(Convert.ToDouble(DC.Altura[i]), Convert.ToDouble(DC.Altura[n]));
+                    int CEdad = porciento(Convert.ToInt32(DC.Edad[i]), Convert.ToInt32(DC.Edad[n]));
+                    int Por =  CPeso + CEdad + CAltura ;
+                    if (Por > MaxP)
                     {
-                        MaxCurp = comparar;
-                        MaxPor = (pes + alt + ed);
-
-                        DBCon DC = new DBCon();
-                        string sql = "SELECT Face FROM UserFaces WHERE Code='"+comparar+"';";
-                        OleDbDataAdapter adaptador = new OleDbDataAdapter(sql, DC.conn);
-                        DataTable dt = new DataTable();
-                        adaptador.Fill(dt);
-                        int cont = dt.Rows.Count;
-                        for (int i = 0; i < cont; i++)
-                        {
-                            
-                            MaxFace = (byte[])dt.Rows[i]["Face"];
-                        }
-                        DC.conn.Close();
-
+                        MaxC = DC.Key[i];
+                        MaxP = Por;
                     }
                 }
+            }
 
-                datos.Close();
-                con.Close();
-            }
-            catch (Exception ex)
+            int r = DC.ExtraerDatos(MaxC);
+            pcbMax.Image = DC.ConvertByteToImg(r);
+            lblKeyMax.Text = MaxC;
+            lblPorcentaje.Text = Convert.ToString(MaxP)+"%";
+            DC.GeneraReporte("Automatica", lblKey.Text, lblKeyMax.Text, lblPorcentaje.Text, fecha.Value.Date.ToString("yyyy-MM-dd"));
+        }
+
+        private int porciento(double num1, double num2)
+        {
+            if (num1 == num2)
             {
-                MessageBox.Show(ex.Message);
+                return 33;
             }
+            else
+            {
+                return 16;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void btn_ultimo_Click(object sender, EventArgs e)

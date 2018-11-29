@@ -252,10 +252,10 @@ namespace Reconocimiento_facial
 
                     //Show face added in gray scale
                     imageBox2.Image = TrainedFace;
-                    dbc.ConvertImgToBinary(txt_nombre.Text, txt_codigo.Text, imageBox2.Image.Bitmap);
+                    
                     //}
 
-                    Registrar_Datos RD = new Registrar_Datos(txt_nombre.Text, txt_codigo.Text, fecha.Value.Date.ToString("yyyy-MM-dd"));
+                    Registrar_Datos RD = new Registrar_Datos(txt_nombre.Text, txt_codigo.Text, imageBox2.Image.Bitmap, fecha.Value.Date.ToString("yyyy-MM-dd"));
                     RD.Show();
                     
                     

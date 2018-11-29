@@ -54,6 +54,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.lblPorcentaje = new System.Windows.Forms.Label();
+            this.fecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.picA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picB)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -346,6 +347,15 @@
             this.lblPorcentaje.TabIndex = 67;
             this.lblPorcentaje.Text = "%%%";
             // 
+            // fecha
+            // 
+            this.fecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.fecha.Location = new System.Drawing.Point(353, 51);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(96, 20);
+            this.fecha.TabIndex = 68;
+            // 
             // ResultadoComparar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,6 +364,7 @@
             this.BackgroundImage = global::Reconocimiento_facial.Properties.Resources.orig_92045;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(794, 462);
+            this.Controls.Add(this.fecha);
             this.Controls.Add(this.lblPorcentaje);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label7);
@@ -418,5 +429,6 @@
         private System.Windows.Forms.Label lblPeso;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lblPorcentaje;
+        private System.Windows.Forms.DateTimePicker fecha;
     }
 }

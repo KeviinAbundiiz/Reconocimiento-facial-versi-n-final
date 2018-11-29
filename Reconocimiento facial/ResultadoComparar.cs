@@ -22,74 +22,80 @@ namespace Reconocimiento_facial
             lblKey2.Text = key2;
             cargar();
             comparar();
+            DBCon DC = new DBCon();
+            DC.GeneraReporte("Manual", lblKey.Text, lblKey2.Text, lblPorcentaje.Text, fecha.Value.Date.ToString("yyyy-MM-dd"));
         }
 
         private void cargar()
         {
-            MySqlConnection con = new MySqlConnection();
-            con.ConnectionString = "Server=localhost;Port=3306;Database=facedata;Uid=root;Pwd=peluche785;SslMode=none";
+            
             try
             {
-                string query = "Select * From datos Where curp='" + lblKey.Text + "';";
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                MySqlDataReader datos = cmd.ExecuteReader();
-                while (datos.Read())
-                {
-                    lblFecha1.Text = datos["fecha"].ToString();
-                    lblPeso1.Text = datos["peso"].ToString();
-                    lblAltura1.Text = datos["altura"].ToString();
-                    lblEdad1.Text = datos["edad"].ToString();
-                }
-                datos.Close();
-                con.Close();
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            try
-            {
-                string query = "Select * From datos Where curp='" + lblKey2.Text + "';";
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                MySqlDataReader datos = cmd.ExecuteReader();
-                while (datos.Read())
-                {
-                    lblFecha2.Text = datos["fecha"].ToString();
-                    lblPeso2.Text = datos["peso"].ToString();
-                    lblAltura2.Text = datos["altura"].ToString();
-                    lblEdad2.Text = datos["edad"].ToString();
-                }
-                datos.Close();
-                con.Close();
+                int n;
+                DBCon Con = new DBCon();
+                Con.ObtenerBytesImagen();
+                n = Con.ExtraerDatos(lblKey.Text);
+                lblFecha1.Text = Con.Fecha[n].ToString();
+                lblPeso1.Text = Con.Peso[n].ToString();
+                lblAltura1.Text = Con.Altura[n].ToString();
+                lblEdad1.Text = Con.Edad[n].ToString();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+            try
+            {
+                int n;
+                DBCon Con = new DBCon();
+                Con.ObtenerBytesImagen();
+                n = Con.ExtraerDatos(lblKey2.Text);
+                lblFecha2.Text = Con.Fecha[n].ToString();
+                lblPeso2.Text = Con.Peso[n].ToString();
+                lblAltura2.Text = Con.Altura[n].ToString();
+                lblEdad2.Text = Con.Edad[n].ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void comparar()
         {
             
             //---
-            lblPeso.Text = Convert.ToDouble((Convert.ToInt32(lblPeso1.Text) - Convert.ToInt32(lblPeso2.Text)) / 100.00).ToString()+"%";
+            lblPeso.Text = porciento(Convert.ToDouble(lblPeso1.Text), Convert.ToDouble(lblPeso2.Text)).ToString()+"%";
             //---
             
             //--
-            lblAltura.Text = Convert.ToDouble((Convert.ToDouble(lblAltura1.Text) - Convert.ToDouble(lblAltura2.Text)) / 100).ToString()+"%";
+            lblAltura.Text = porciento(Convert.ToDouble(lblAltura1.Text), Convert.ToDouble(lblAltura2.Text)).ToString()+"%";
             //--
             
             //---
-            lblEdad.Text = Convert.ToDouble((Convert.ToDouble(lblEdad1.Text) - Convert.ToDouble(lblEdad2.Text))/100).ToString() + "%";
+            lblEdad.Text = porciento(Convert.ToDouble(lblEdad1.Text), Convert.ToDouble(lblEdad2.Text)).ToString() + "%";
             //---
 
-            lblPorcentaje.Text = (Convert.ToDouble((Convert.ToInt32(lblPeso1.Text) - Convert.ToInt32(lblPeso2.Text)) / 100.00) + Convert.ToDouble((Convert.ToDouble(lblAltura1.Text) - Convert.ToDouble(lblAltura2.Text)) / 100) + Convert.ToDouble((Convert.ToDouble(lblEdad1.Text) - Convert.ToDouble(lblEdad2.Text)) / 100)).ToString()+" %";
+            lblPorcentaje.Text = (porciento(Convert.ToDouble(lblPeso1.Text), Convert.ToDouble(lblPeso2.Text)) + porciento(Convert.ToDouble(lblAltura1.Text), Convert.ToDouble(lblAltura2.Text)) + porciento(Convert.ToDouble(lblEdad1.Text), Convert.ToDouble(lblEdad2.Text))+1).ToString()+" %";
         }
 
         private void btn_close_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private int porciento(double num1, double num2)
+        {
+            if(num1 == num2)
+            {
+                return 33;
+            }
+            else
+            {
+                return 16;
+            }
         }
 
         private void btn_minimize_Click(object sender, EventArgs e)

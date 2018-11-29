@@ -26,28 +26,17 @@ namespace Reconocimiento_facial
 
         private void Cargar()
         {
-            DBCon DB = new DBCon();
-            MySqlConnection con = DB.MySql();
-            try
-            {
-                string query = "Select * From datos Where curp='" + txtCurp.Text + "';";
-                con.Open();
-                MySqlCommand cmd = new MySqlCommand(query, con);
-                MySqlDataReader datos = cmd.ExecuteReader();
-                while (datos.Read())
-                {
-                    txtPeso.Text = datos["peso"].ToString();
-                    txtAltura.Text = datos["altura"].ToString();
-                    txtEdad.Text = datos["edad"].ToString();
-                    fecha.Text = datos["fecha"].ToString();
-                }
-                datos.Close();
-                con.Close();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            int n;
+            DBCon Con = new DBCon();
+            Con.ObtenerBytesImagen();
+            n = Con.ExtraerDatos(curp_or);
+            txtCurp.Text = Con.Key[n].ToString();
+            fecha.Text = Con.Fecha[n].ToString();
+            txtPeso.Text = Con.Peso[n].ToString();
+            txtAltura.Text = Con.Altura[n].ToString();
+            txtEdad.Text = Con.Edad[n].ToString();
+            pictureBox1.Image = Con.ConvertByteToImg(n);
+            
 
         }
 
@@ -58,22 +47,9 @@ namespace Reconocimiento_facial
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            MySqlConnection con = new MySqlConnection();
-            con.ConnectionString = "Server=localhost;Port=3306;Database=facedata;Uid=root;Pwd=peluche785;SslMode=none";
-            try
-            {
-                MySqlCommand cmd = con.CreateCommand();
-                cmd.CommandText = "Update datos set curp='"+txtCurp.Text+"', peso='"+txtPeso.Text+"', edad='"+txtEdad.Text+"', fecha='"+fecha.Text+"', edad='"+txtEdad.Text+"' where curp='"+curp_or+"';";
-                con.Open();
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Datos Actualizados");
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            DBCon DC = new DBCon();
+            DC.EditarDatos(txtCurp.Text, fecha.Text, txtPeso.Text, txtAltura.Text, txtEdad.Text, curp_or);
+            this.Close();
         }
     }
 }

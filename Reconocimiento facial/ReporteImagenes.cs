@@ -31,7 +31,7 @@ namespace Reconocimiento_facial
                 DataTable results = new DataTable();
                 using (OleDbConnection conexion = new OleDbConnection(conect))
                 {
-                    OleDbCommand cmd = new OleDbCommand(@"Select * from Reporte", conexion);
+                    OleDbCommand cmd = new OleDbCommand(@"Select * from Reportes", conexion);
                     conexion.Open();
                     OleDbDataAdapter adapter = new OleDbDataAdapter(cmd);
                     adapter.Fill(results);
